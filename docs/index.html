@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>JS 練習</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
+</head>
+
+<body id="top">
+  <main class="main" role="main">
+    <div class="burger">
+      <h2 class="burger-heading">ハンバーガーメニュー</h2>
+      <div class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="nav-inner">
+          <ul class="nav-list">
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#products">製品情報</a></li>
+            <li><a href="#campaign">キャンペーン</a></li>
+            <li><a href="#movies">動画</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="accordion">
+      <h2 class="accordion-heading">アコーディオン</h2>
+      <ul class="accordion-list">
+        <li class="js-accordion" data-value="0">
+          <p class="accordion-text">もっと見る</p>
+          <div class="accordion-wrap js-accordion-wrap">
+            <div class="accordion-inner js-accordion-inner">
+              <p class="accordion-inner-text">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+        </li>
+        <li class="js-accordion" data-value="1">
+          <p class="accordion-text">もっと見る</p>
+          <div class="accordion-wrap js-accordion-wrap">
+            <div class="accordion-inner js-accordion-inner">
+              <p class="accordion-inner-text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+        </li>
+        <li class="js-accordion" data-value="2">
+          <p class="accordion-text">もっと見る</p>
+          <div class="accordion-wrap js-accordion-wrap">
+            <div class="accordion-inner js-accordion-inner">
+              <p class="accordion-inner-text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+        </li>
+        <li class="js-accordion" data-value="3">
+          <p class="accordion-text">もっと見る</p>
+          <div class="accordion-wrap js-accordion-wrap">
+            <div class="accordion-inner js-accordion-inner">
+              <p class="accordion-inner-text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal">
+      <h2 class="modal-heading">モーダル</h2>
+      <ul class="modal-list">
+        <li data-modalOpenButton="0"><a href="#">モーダル1</a></li>
+        <li data-modalOpenButton="1"><a href="#">モーダル2</a></li>
+        <li data-modalOpenButton="2"><a href="#">モーダル3</a></li>
+        <li data-modalOpenButton="3"><a href="#">モーダル4</a></li>
+        <li data-modalOpenButton="4"><a href="#">モーダル5</a></li>
+        <li data-modalOpenButton="5"><a href="#">モーダル6</a></li>
+      </ul>
+
+      <div class="modalwrap js-modal-wrap">
+        <div class="overlay js-modal-close"></div>
+        <div class="modalin" data-modalItem="0">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 1</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">1番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+
+        <div class="modalin" data-modalItem="1">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 2</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">2番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+
+        <div class="modalin" data-modalItem="2">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 3</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">3番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+
+        <div class="modalin" data-modalItem="3">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 4</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">4番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+
+        <div class="modalin" data-modalItem="4">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 5</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">5番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+
+        <div class="modalin" data-modalItem="5">
+          <div class="modal-inner">
+            <p class="modal-heading">モーダル 6</p>
+            <div class="modal-detail">
+              <div class="detail-inner">
+                <p class="detail-text">6番目のモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <p class="close-button js-modal-close">閉じる</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="links">
+      <h2 class="links-heading">アンカーリンク・トップへ戻る</h2>
+      <ul class="links-list">
+        <li id="products">●製品情報</li>
+        <li id="campaign">●キャンペーン</li>
+        <li id="movies">●動画</li>
+        <li id="contact">●お問い合わせ</li>
+      </ul>
+
+      <p class="links-jumptop"><a href="#top">トップへ戻る</a></p>
+    </div>
+  </main>
+</body>
+
+<script src="./js/index.bundle.js"></script>
+
+</html>
